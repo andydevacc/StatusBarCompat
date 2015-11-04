@@ -28,9 +28,16 @@ StatusBarCompat 能让Android 4.4实现Material Design风格的状态栏（包�
 在 `build.gradle` 加入如下依赖：
 
 ```groovy
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
+    compile 'com.github.luckyandyzhang:StatusBarCompat:1.0.0'
 }	
 ```
 
@@ -43,7 +50,7 @@ StatusBarCompact.init(this,Color.parseColor("#303F9F");
 
 ##样式
 - Style.NORMAL (默认选项)
-- Style.FILL
+- Style.FILL (请配合DrawerLayout和NavigationView使用)
 
 如果是带有Drawer的布局，请使用官方的 DrawerLayout + NavigationView（ScrimInsetsFrameLayout）  
 使用的时候需要注意：  
