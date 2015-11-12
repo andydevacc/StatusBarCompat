@@ -37,7 +37,7 @@ repositories {
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.android.support:design:23.1.0'
-    compile 'com.github.luckyandyzhang:StatusBarCompat:1.0.0'
+    compile 'com.github.luckyandyzhang:StatusBarCompat:1.0.1'
 }	
 ```
 
